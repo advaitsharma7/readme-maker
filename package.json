@@ -2,10 +2,15 @@
   "name": "readme-maker",
   "version": "0.1.0",
   "private": true,
+  "author": "Advait Sharma",
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^27.1.0",
+    "@ckeditor/ckeditor5-react": "^3.0.2",
+    "@material-ui/core": "^4.11.4",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "ckeditor5-custom-build": "file:ckeditor5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -34,5 +39,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@ckeditor/ckeditor5-alignment": "^27.1.0",
+    "@ckeditor/ckeditor5-autoformat": "^27.1.0",
+    "@ckeditor/ckeditor5-code-block": "^27.1.0"
   }
 }

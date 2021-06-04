@@ -1,12 +1,9 @@
-.App {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
 .button {
   text-align: end;
   padding: 5px;
   padding-bottom: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .head {
@@ -15,6 +12,8 @@
   padding-top: 0;
   margin-top: 0px;
   color: hsl(225deg 33% 95%);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 h2 {

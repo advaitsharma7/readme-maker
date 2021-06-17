@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import Editor from "ckeditor5-custom-build/build/ckeditor";
 import { Button } from "@material-ui/core";
+import TurndownService from "turndown";
 import "./App.css";
+
+const turndownService = new TurndownService();
 
 function App() {
   const [text, setText] = useState("");
   const downloadTxtFile = () => {
     const element = document.createElement("a");
-    const file = new Blob([text], {
+    const markdown = turndownService.turndown(text);
+    const file = new Blob([markdown], {
       type: "text/plain;charset=utf-8",
     });
     element.href = URL.createObjectURL(file);
@@ -41,10 +45,10 @@ function App() {
       "code",
       "codeBlock",
       "link",
-      "uploadImage",
-      "imageTextAlternative",
-      "imageStyle:full",
-      "imageStyle:side",
+      // "uploadImage",
+      // "imageTextAlternative",
+      // "imageStyle:full",
+      // "imageStyle:side",
       "mediaEmbed",
       "insertTable",
       "tableColumn",

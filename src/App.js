@@ -3,9 +3,11 @@ import { CKEditor } from "@ckeditor/ckeditor5-react";
 import Editor from "ckeditor5-custom-build/build/ckeditor";
 import { Button } from "@material-ui/core";
 import TurndownService from "turndown";
+import { gfm } from "turndown-plugin-gfm";
 import "./App.css";
 
 const turndownService = new TurndownService();
+turndownService.use(gfm);
 
 function App() {
   const [text, setText] = useState("");
@@ -38,7 +40,7 @@ function App() {
       "subscript",
       "specialCharacters",
       "|",
-      "alignment",
+      // "alignment",
       "indent",
       "outdent",
       "|",
